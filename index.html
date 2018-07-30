@@ -1,25 +1,19 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 
   <head>
     <title></title>
     <meta charset="UTF-8">
-    <!-- <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" /> -->
+
     <meta name="viewport" content="width=device-width minimal-ui">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  <!-- <link rel="stylesheet" href="assets/css/mycss.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
   <style>
-    /* html,
-    body {
-      padding: 0;
-      margin: 0;
-      background: #333;
-    } */
+
 
     p {
       margin-bottom: 20px;
@@ -45,16 +39,7 @@
       color: #ddd;
     }
 
-    /* .pager {
-      padding-left: 0;
-      margin: 20px 0;
-      text-align: center;
-      list-style: none;
 
-    } */
-
- /* Sticky footer styles
--------------------------------------------------- */
 html {
   position: absolute;
   min-height: 100%;
@@ -74,7 +59,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
+
   background-color: #f5f5f5;
 }
 .pager {
@@ -83,9 +68,7 @@ body {
     margin: 20px 0;
     text-align: center;
     list-style: none;
-    /* height: 100% ;
-overflow-y: scroll ;
--webkit-overflow-scrolling: touch; */
+
 height: calc (100% - 60px);
 }
 .footer a {
@@ -102,24 +85,13 @@ height: calc (100% - 60px);
 .footer-links li + li {
   margin-left: 15px;
 }
- /* @media only screen and (max-width: 767px){
-
-  .pager {
-    padding-left: 0;
-    margin: 20px 0;
-    text-align: center;
-    list-style: none;
-    height: calc (100% - 60px);
-/* overflow-y: scroll ;
--webkit-overflow-scrolling: touch;
-padding-bottom: 44px; */
 }
 html{
   position: relative; 
   height: 100%; 
   overflow: hidden;
 }
-}  */
+
   </style>
 </head>
 
@@ -176,4 +148,96 @@ $(document).ready(function(){
   
 </script>
 
-</html>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #777;
+  color: #fff;
+  padding: 8px 5%;
+}
+
+header.main a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content {
+  padding: 25px 5%;
+}
+
+footer {
+  background: #777;
+  color: #fff;
+  padding: 7px 5%;
+}
+</style>
+<body>
+  <div class="container">
+    
+    <header class="main">
+      <h3>Logo</h3>
+      <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </nav>
+    </header>
+    
+    <div class="content">
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In praesentium enim odit voluptatum nostrum voluptates temporibus vero, doloribus rerum dolore aliquid velit nihil consequuntur suscipit, nesciunt excepturi, necessitatibus id unde?</div>
+      <div>Magnam enim vero at. Animi cum mollitia asperiores maxime corporis eligendi eius natus similique quibusdam. Eum, sunt repudiandae, possimus amet dicta blanditiis saepe odit culpa labore soluta, quia inventore voluptatibus.</div>
+      <div>Doloribus tempora dicta doloremque quia deserunt sapiente expedita architecto distinctio cupiditate quisquam, temporibus corporis ullam vel at enim in molestiae soluta ut, voluptate cumque provident. Esse saepe officiis assumenda sed.</div>
+      <div>Ad incidunt iusto et totam aut. Ab enim inventore, officiis repellat asperiores labore modi pariatur quo cupiditate aliquam quia consequuntur ducimus nesciunt facilis ut doloribus! Sunt laboriosam, et atque quae.</div>
+      <div>Obcaecati, porro ducimus. Eligendi nesciunt laboriosam aperiam id, veritatis voluptas sapiente eaque cupiditate voluptatum, ipsam aspernatur expedita, optio quisquam ipsum atque est necessitatibus quis. Debitis itaque enim quaerat, similique molestias.</div>
+      <div>Blanditiis laudantium, officia error maiores expedita commodi aliquid perferendis voluptates modi. Expedita velit eaque numquam saepe eligendi perspiciatis veniam libero tempore corporis nobis pariatur sed harum neque vitae, repellat, blanditiis.</div>
+      <div>Doloribus, officia? Minima sapiente eum magni architecto, quibusdam repudiandae amet quod placeat vitae, officia corporis, ullam recusandae reiciendis eos rerum velit qui. Laudantium doloremque, culpa obcaecati, distinctio ad impedit. Accusantium?</div>
+      <div>Minima quasi dignissimos est enim dolorum maiores quibusdam esse ipsa nam molestiae nobis omnis placeat hic, tempore, qui fuga numquam similique odit exercitationem officia aliquam, repellendus consectetur sit cumque. Asperiores.</div>
+    </div>
+  </div>
+  
+  <footer>
+      <nav class="navbar navbar-inverse navbar-fixed-bottom" id="navigateFooter">
+          <ul class="pager" style="margin:10px">
+            <button class="btn btn-lg btn-success buttonPadding" id="nextButton" type="submit">Check</button>
+          </ul>
+          <p>&copy; 2018</p>
+        </nav>
+    
+  </footer>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#nextButton").on("click", function () {
+        alert("HEY")
+      })
+
+      document.addEventListener("touchmove", function(e) { e.preventDefault() })
+    })
+      
+    </script>
+    </body>
+    </html>
