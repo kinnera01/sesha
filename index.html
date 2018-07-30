@@ -201,7 +201,17 @@ header.main a {
 footer {
   background: #777;
   color: #fff;
+  padding: 7px 5%;
+}
+@media only screen and (max-width: 600px) {
+  body{
+    padding-bottom:50px;
+  }
+  footer {
+  background: #777;
+  color: #fff;
   padding: 7px 10%;
+}
 }
 </style>
 <body>
@@ -253,7 +263,9 @@ footer {
 
       document.addEventListener("touchmove", function(e) { e.preventDefault() })
     })
-      
+     // var x=[10,15,25,89];
+      console.log(x[4]);
+
     </script>
     </body>
     </html>
