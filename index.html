@@ -1,93 +1,117 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<title></title>
-<style>
- 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <title></title>
+  <style>
     html,
     body {
-    	padding: 0;
-    	margin: 0;
-        background: #333;
+      padding: 0;
+      margin: 0;
+      background: #333;
     }
-    
+
     p {
-        margin-bottom: 20px;
-        line-height: 20px;
-        color: #ddd;
-        padding: 10px;
-        font-family: sans-serif;
+      margin-bottom: 20px;
+      line-height: 20px;
+      color: #ddd;
+      padding: 10px;
+      font-family: sans-serif;
     }
-    
+
     a {
-        height: 44px;
-        width: 100%;
-        display: block;
-        background: #ffdf1b;
-        color: black;
-        line-height: 44px;
-        text-align: center;
-        font-family: sans-serif;
+      height: 44px;
+      width: 100%;
+      display: block;
+      background: #ffdf1b;
+      color: black;
+      line-height: 44px;
+      text-align: center;
+      font-family: sans-serif;
     }
 
     a.active {
-    	background: #14805e;
-    	color: #ddd;
+      background: #14805e;
+      color: #ddd;
     }
-    .pager {
-    padding-left: 0;
-    margin: 20px 0;
-    text-align: center;
-    list-style: none;
-    /* Allows content to fill the viewport and go beyond the bottom */
-height: 100%;
- 
- /* Allows you to scroll below the viewport; default value is visible */
- /* overflow-y: scroll; */
-  
- /* To smooth any scrolling behavior */
- -webkit-overflow-scrolling: touch;
-}
-    </style>
-</head>
-<body>
-<p>Bacon ipsum dolor amet hamburger boudin tenderloin, turkey tail ball tip pig. Drumstick sirloin beef swine. Pork ball tip brisket, jerky drumstick meatball shoulder frankfurter strip steak. Pastrami doner sausage porchetta ham hock pork loin salami venison short loin alcatra capicola tongue brisket shankle. Pork chop ground round corned beef, frankfurter biltong pancetta jerky landjaeger tenderloin.</p>
-<p>Brisket fatback short ribs jerky tenderloin, picanha flank pork belly kielbasa pork chop. Landjaeger porchetta turkey jerky pork chop fatback. Bacon short loin biltong corned beef salami kielbasa doner andouille chuck spare ribs cow drumstick pancetta t-bone. Beef ribs pork belly spare ribs ribeye, tongue cupim pork loin beef short loin chicken kielbasa. Sausage flank shoulder tongue landjaeger boudin. Cow tri-tip turducken boudin, landjaeger pancetta rump ham. Ham hock capicola meatloaf short ribs tenderloin venison.</p>
-<a id="disable">Disable Touchmove</a>
-<p>Bresaola pork short loin pig drumstick frankfurter. Ball tip cow ground round cupim salami pancetta shoulder jowl filet mignon t-bone. Chicken doner capicola ham hock ham ribeye pork loin drumstick. Sausage t-bone chuck shankle.</p>
-<p>Ball tip meatloaf drumstick salami short ribs, sirloin doner brisket turducken kielbasa. Ribeye rump ground round, pork belly spare ribs landjaeger bresaola jerky tail prosciutto t-bone chicken hamburger salami. Cupim kielbasa fatback ham, corned beef shank leberkas landjaeger. Kevin tongue sirloin bresaola biltong.</p>
-<p>Jowl leberkas short ribs beef ground round biltong, kevin turducken tongue ribeye boudin chuck. Pancetta biltong cupim ham kielbasa shoulder tongue ground round tri-tip pork belly pork chop swine meatball meatloaf beef ribs. Chicken ham shank tongue meatloaf pig ball tip hamburger tenderloin salami t-bone landjaeger tail pastrami andouille. Jowl tri-tip sausage capicola meatloaf bresaola chuck porchetta hamburger tenderloin t-bone short ribs bacon shoulder.</p>
 
-<nav class="navbar navbar-inverse navbar-fixed-bottom" id="navigateFooter">
-  <ul class="pager" style="margin:10px">
+    .pager {
+      padding-left: 0;
+      margin: 20px 0;
+      text-align: center;
+      list-style: none;
+
+    }
+
+    @media only screen and (max-width: 600px) {
+      .pager {
+        padding-left: 0;
+        margin: 20px 0;
+        text-align: center;
+        list-style: none;
+        /* Allows content to fill the viewport and go beyond the bottom */
+        height: 100%;
+
+        /* Allows you to scroll below the viewport; default value is visible */
+        /* overflow-y: scroll; */
+        /* To smooth any scrolling behavior */
+        -webkit-overflow-scrolling: touch;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <p>Bacon ipsum dolor amet hamburger boudin tenderloin, turkey tail ball tip pig. Drumstick sirloin beef swine. Pork ball tip
+    brisket, jerky drumstick meatball shoulder frankfurter strip steak. Pastrami doner sausage porchetta ham hock pork loin
+    salami venison short loin alcatra capicola tongue brisket shankle. Pork chop ground round corned beef, frankfurter biltong
+    pancetta jerky landjaeger tenderloin.</p>
+  <p>Brisket fatback short ribs jerky tenderloin, picanha flank pork belly kielbasa pork chop. Landjaeger porchetta turkey jerky
+    pork chop fatback. Bacon short loin biltong corned beef salami kielbasa doner andouille chuck spare ribs cow drumstick
+    pancetta t-bone. Beef ribs pork belly spare ribs ribeye, tongue cupim pork loin beef short loin chicken kielbasa. Sausage
+    flank shoulder tongue landjaeger boudin. Cow tri-tip turducken boudin, landjaeger pancetta rump ham. Ham hock capicola
+    meatloaf short ribs tenderloin venison.</p>
+  <a id="disable">Disable Touchmove</a>
+  <p>Bresaola pork short loin pig drumstick frankfurter. Ball tip cow ground round cupim salami pancetta shoulder jowl filet
+    mignon t-bone. Chicken doner capicola ham hock ham ribeye pork loin drumstick. Sausage t-bone chuck shankle.</p>
+  <p>Ball tip meatloaf drumstick salami short ribs, sirloin doner brisket turducken kielbasa. Ribeye rump ground round, pork
+    belly spare ribs landjaeger bresaola jerky tail prosciutto t-bone chicken hamburger salami. Cupim kielbasa fatback ham,
+    corned beef shank leberkas landjaeger. Kevin tongue sirloin bresaola biltong.</p>
+  <p>Jowl leberkas short ribs beef ground round biltong, kevin turducken tongue ribeye boudin chuck. Pancetta biltong cupim
+    ham kielbasa shoulder tongue ground round tri-tip pork belly pork chop swine meatball meatloaf beef ribs. Chicken ham
+    shank tongue meatloaf pig ball tip hamburger tenderloin salami t-bone landjaeger tail pastrami andouille. Jowl tri-tip
+    sausage capicola meatloaf bresaola chuck porchetta hamburger tenderloin t-bone short ribs bacon shoulder.</p>
+
+  <nav class="navbar navbar-inverse navbar-fixed-bottom" id="navigateFooter">
+    <ul class="pager" style="margin:10px">
       <button class="btn btn-lg btn-success buttonPadding" id="nextButton" type="submit">Check</button>
-  </ul>
-</nav>
+    </ul>
+  </nav>
 
 </body>
 
 <script type="text/javascript">
- $("#nextButton").on("click",function(){
+  $("#nextButton").on("click", function () {
     alert("HEY")
   })
-	var disabled = false;
-	document.getElementById("disable").addEventListener("click", function (e) {
-		disabled = !disabled;
-		if(disabled) {
-			document.getElementById("disable").classList.add("active");
-			document.documentElement.addEventListener("touchmove", preventDefault);
-		} else {
-			document.getElementById("disable").classList.remove("active");
-			document.documentElement.removeEventListener("touchmove", preventDefault);
-		}
-	});
-
-	var preventDefault = function (e) {
-		e.preventDefault();
-	}
+  var disabled = false;
+  document.getElementById("disable").addEventListener("click", function (e) {
+    disabled = !disabled;
+    if (disabled) {
+      document.getElementById("disable").classList.add("active");
+      document.documentElement.addEventListener("touchmove", preventDefault);
+    } else {
+      document.getElementById("disable").classList.remove("active");
+      document.documentElement.removeEventListener("touchmove", preventDefault);
+    }
+  });
+  var preventDefault = function (e) {
+    e.preventDefault();
+  }
 </script>
+
 </html>
