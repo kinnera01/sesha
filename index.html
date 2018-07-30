@@ -144,6 +144,8 @@ overflow-y: scroll ;
 </body>
 
 <script type="text/javascript">
+$(document).ready(function(e){
+  e.preventDefault();
   $("#nextButton").on("click", function () {
     alert("HEY")
   })
@@ -158,9 +160,11 @@ overflow-y: scroll ;
       document.documentElement.removeEventListener("touchmove", preventDefault);
     }
   });
-  var preventDefault = function (e) {
-    e.preventDefault();
-  }
+  setTimeout(function () {
+  window.scrollTo(0, 1);
+}, 1000);
+})
+  
 </script>
 
 </html>
