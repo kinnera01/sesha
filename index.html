@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  <!-- <link rel="stylesheet" href="assets/css/mycss.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <style>
+    @font-face {
+    font-family: 'sofia_pro_lightregular';
+    src: url('SofiaProLight-webfont.eot');
+    src: url('SofiaProLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('SofiaProLight-webfont.woff') format('woff'),
+         url('SofiaProLight-webfont.ttf') format('truetype'),
+         url('SofiaProLight-webfont.svg#sofia_pro_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.scrollable-menu {
+        height: auto;
+        max-height: 200px;
+        overflow-x: hidden;
+    }
+
+    ul.dropdown-menu.sub-menu {
+        min-height: 332px;
+    }
+
+  /* @import url('https://fonts.googleapis.com/css?family=Roboto'); */
+  #rightmenu> li > a{
+    padding:10px;
+}*/
+
+#menu>li:last-child>a {
+  padding-right: 0px;
+  margin-right: 0px;
+}
+.dropdown-menu .sub-menu {
+  position: absolute;
+  top: 0;
+}
+
+#menu .open .dropdown-menu > li > a {
+    padding:10px;
+}
+
+ul#subjectsmenu.dropdown-menu>li>a {
+   padding: 10px;
+   min-width:250px;
+}
+ul#subjectsmenu.dropdown-menu ul.dropdown-menu.sub-menu>li>a {
+   padding: 10px;
+}
+
+/*=-====Main Menu=====*/
+
+.header_area .mainmenu .active a,
+.header_area .mainmenu .active a:focus,
+.header_area .mainmenu .active a:hover,
+.header_area .mainmenu li a:hover,
+.header_area .mainmenu li a:focus,
+.navbar-default #menu>.open>a,
+.navbar-default #menu>.open>a:focus,
+.navbar-default #menu>.open>a:hover {
+  color: white;
+  background: #54c6d4;
+  outline: 0;
+}
+.navbar-default .navbar-toggle {
+  border-color: white;
+}
+
+/*Toggle Button*/
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+/*Toggle Button*/
+/*==========Sub Menu=v==========*/
+
+.mainmenu .collapse ul>li:hover>a {
+  background: rgba(0, 0, 0, .15);
+  /* border-radius:5px; */
+}
+.mainmenu .collapse ul ul>li:hover>a,
+.navbar-default #menu .open .dropdown-menu>li>a:focus,
+.navbar-default #menu .open .dropdown-menu>li>a:hover {
+  background: rgba(0, 0, 0, .15);
+}
+.mainmenu .collapse ul ul ul>li:hover>a {
+  background: rgba(0, 0, 0, .15);
+}
+.mainmenu .collapse ul ul,
+.mainmenu .collapse ul ul.dropdown-menu {
+  background: white;
+  border: 0.5px solid grey;
+  /* border-radius:10px; */
+}
+.mainmenu .collapse ul ul ul,
+.mainmenu .collapse ul ul ul.dropdown-menu {
+  background: white;
+  border: 0.5px solid grey;
+  /* border-radius:10px; */
+}
+.mainmenu .collapse ul ul ul ul,
+.mainmenu .collapse ul ul ul ul.dropdown-menu {
+  background: #e4eeb8;
+}
+/******************************Drop-down menu work on hover**********************************/
+.hpg-caret-right {
+  float: right;
+  border-bottom: 4px solid transparent;
+  border-top: 4px solid transparent;
+  border-left: 4px solid;
+  margin-top: 4px;
+  margin-right: 0px;
+  display: block;
+  height: 0;
+  opacity: 0.8;
+  width: 2px;
+  position: relative;
+}
+.hpg-caret{
+  display:inline-block;
+    width: .5em;
+    height: .8em;
+    position:relative;
+    float: right;
+    border-color: inherit;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.hpg-caret:before,
+.hpg-caret:after{
+  display:block;
+    content:"";
+    width:0;
+    height:0em;
+    border-style:solid;
+    position:absolute;
+}
+/*Change four 'top' values below to rotate (top/right/bottom/left)*/
+.hpg-caret:before{
+  right:0;
+  border-width:.4em 0 .4em .4em;
+  border-color:transparent transparent transparent black;   
+
+}
+.hpg-caret:after{
+  left:0;
+    border-width:.4em 0 .4em .4em;
+    border-color:transparent transparent transparent white;;    
+}
+.hpg-arrow{
+  display: block;
+  width: 0;
+  height: 0;
+  float: right;
+  margin-top:8px;
+  margin-right: auto;
+  border-top: 5px solid #101010;
+  border-right: 5px solid transparent;
+  border-bottom: 0 dotted;
+  border-left: 5px solid transparent;
+  opacity: 0.8;
+  content: "";
+}
+#menu .open .dropdown-menu > li > a {
+    padding:10px;
+}
+
+ul#subjectsmenu.dropdown-menu>li>a {
+   padding: 10px;
+}
+
+ul#loggedInRightMenu.dropdown-menu>li>a {
+     border-bottom: 1px solid #D6D8DA !important;
+    display: block !important;
+    font-size: 15px !important;
+    color: black;
+    line-height:20px !important;
+    overflow: hidden !important;
+   padding:10px;
+   margin-left: 15px;
+    }
+
+/* Mediascrens*/
+
+@media only screen and (max-width: 767px) {
+  .dropdown .hpg-caret-right {
+    display: none;
+  }
+ .mainmenu a, .navbar-inverse #menu>li>a {
+    padding: 10px 15px;
+    font-weight: bold
+}
+  #menu .open .dropdown-menu > li > a {
+    padding:10px 15px;
+}
+ 
+  .dropdown-toggle .hpg-arrow {
+    display: inline;
+  }
+  ul.dropdown-menu.sub-menu {
+    min-height: auto;
+  }
+  .mainmenu .collapse ul ul ul,
+  .mainmenu .collapse ul ul ul.dropdown-menu {
+    background:transparent;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+       
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    border-bottom: 1px solid #D6D8DA !important;
+    display: block !important;
+    font-size: 15px !important;
+    line-height:20px !important;
+    overflow: hidden !important;
+  }
+  
+.navbar-inverse .navbar-nav .open #rightMenu>li>a {
+       border:none;
+       display:none;
+    }
+  .navbar-inverse .navbar-nav .open .dropdown-menu.dropdown-toggle>li>a {
+    color: inherit !important;
+  }
+  .navbar-collapse.in {
+    overflow-y: initial;
+  }
+  .mainmenu .collapse ul ul {
+   min-width:inherit;
+   border-bottom:none;
+  }
+  .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+     max-height: 100%; 
+}
+
+  .navbar-collapse {
+    height: calc(100vh - 60px) !important;
+    overflow-y: scroll !important;
+    /* max-height: 300px;  */
+    overflow-x: hidden;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+    -webkit-overflow-scrolling: touch; 
+  }
+  .mainmenu .collapse ul ul ul,
+  .mainmenu .collapse ul ul ul.dropdown-menu {
+    background: white;
+    border: none;
+    border-radius: none;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu.sub-menu>li>a {
+    margin-left: 30px;
+    color: rebeccapurple;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .mainmenu .collapse ul li {
+    position: relative;
+  }
+  .mainmenu .collapse ul li:hover>ul {
+    display: block;
+  }
+  .mainmenu .collapse ul ul {
+    position: absolute;
+    top: 100%;
+    min-width:inherit;
+    display: none
+  }
+  .dropdown-toggle .hpg-caret-right {
+    display: inline;
+  }
+  .dropdown-toggle .hpg-caret {
+    display: none;
+  }
+  .navbar-inverse .navbar-nav .open #rightMenu>li>a {
+       border:none;
+       display:none;
+    }
+  /*  */
+  /*******/
+ 
+  .mainmenu .collapse ul ul li {
+    position: relative
+  }
+  .mainmenu .collapse ul ul li:hover>ul {
+    display: block
+  }
+  .mainmenu .collapse ul ul ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 250px;
+    display: none;
+  }
+  /*******/
+  .mainmenu .collapse ul ul ul li {
+    position: relative;
+  }
+  .mainmenu .collapse ul ul ul li:hover ul {
+    display: block;
+  }
+  .mainmenu .collapse ul ul ul ul {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    min-width: 250px;
+    display: none;
+    z-index: 1;
+  }
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 150px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  background-color: #f5f5f5;
+}
+
+.footer a {
+  color: #fff;
+}
+.footer-links {
+  padding-left: 0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.footer-links li {
+  display: inline-block;
+}
+.footer-links li + li {
+  margin-left: 15px;
+}
+</style>
+  <script>
+    (function($) {
+      $(document).ready(function() {
+        $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+          event.preventDefault();
+          event.stopPropagation();
+          $(this).parent().siblings().removeClass('open');
+          $(this).parent().toggleClass('open');
+        });
+      });
+    })(jQuery);
+  </script>
+<nav class="navbar navbar-inverse navbar-fixed-top mainmenu" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="brand" id="homeIcon" href="/"><img src="/Content/mySWOTS_Logo_web_dark.png"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav dropdown" id="menu">
+                <li id="skills" class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" style="background-color:violet;color:black;font-size:20px">
+                        <span class="hpg-arrow"></span>  Subjects
+                    </a>
+                    <ul class="dropdown-menu" id="subjectsmenu">
+                        <li>
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle" style="color: purple"><span class="hpg-caret-right"></span><span class="hpg-caret"></span>Communication Skills</a>
+                            <ul class="dropdown-menu sub-menu" style="top:-8px">
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=54'" style="color: purple">English Speaking</a></li>
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=52'" style="color: purple">English Reading</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle" style="color: #543b78"><span class="hpg-caret-right"></span><span class="hpg-caret"></span>SAT PREP</a>
+                            <ul class="dropdown-menu sub-menu" style="top:-48px">
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=24'" style="color: #543b78">Reading</a></li>
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=25'" style="color: #543b78">Writing & Language</a></li>
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=26'" style="color: #543b78">Math</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle" style="color: #027d97"><span class="hpg-caret-right"></span><span class="hpg-caret"></span>PROGRAMMING</a>
+                            <ul class="dropdown-menu sub-menu" style="top:-88px">
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=1'" style="color: #027d97">C</a></li>
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=3'" style="color: #027d97">Data Structures & Algorithms in C</a></li>
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=4'" style="color: #027d97">Java</a></li>
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=7'" style="color: #027d97">Python</a></li>
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=19'" style="color: #027d97">DBMS-SQL</a></li>
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=6'" style="color: #027d97">Android Programming</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle" style="color: #0d923f"><span class="hpg-caret-right"></span><span class="hpg-caret"></span>JOB PLACEMENTS</a>
+                            <ul class="dropdown-menu sub-menu" style="top:-128px">
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=10'" style="color: #0d923f">Quantitative Aptitude</a></li>
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=9'" style="color: #0d923f">Verbal Ability</a></li>
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=34'" style="color: #0d923f">DILR: Data Interpretation & Logical Reasoning</a></li>
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=35'" style="color: #0d923f">Logic and Reasoning</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle" style="color: magenta"><span class="hpg-caret-right"></span><span class="hpg-caret"></span>Schools (INDIA)</a>
+                            <ul class="dropdown-menu sub-menu" style="top:-168px">
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=64'" style="color: magenta">Physics (5th-8th)</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle" style="color: #9e034e"><span class="hpg-caret-right"></span><span class="hpg-caret"></span>ENGINEERING</a>
+                            <ul class="dropdown-menu sub-menu" style="top:-208px">
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=51'" style="color: #9e034e">Petroleum Engineering</a></li>
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=22'" style="color: #9e034e">Microprocessor & Microcontroller</a></li>
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=27'" style="color: #9e034e">Analog & Digital Electronics</a></li>
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=39'" style="color: #9e034e">Electrical Engineering</a></li>
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=23'" style="color: #9e034e">Instrumentation</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle" style="color: red"><span class="hpg-caret-right"></span><span class="hpg-caret"></span>SPORTS</a>
+                            <ul class="dropdown-menu sub-menu" style="top:-248px">
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=55'" style="color: red">Cricket</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle" style="color: blue"><span class="hpg-caret-right"></span><span class="hpg-caret"></span>MCVSD PREP</a>
+                            <ul class="dropdown-menu sub-menu" style="top:-288px">
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=56'" style="color: blue">Reading/LA</a></li>
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=57'" style="color: blue">Sequences/Patterns</a></li>
+                                <li><a href="#" onclick="location.href='/Quiz?skillId=58'" style="color: blue">Mathematics</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li id="contestindex"><a href="/Contest/Home">Coach</a></li>
+                <li id="collegefestindex"><a href="/CollegeFest">College Fest</a></li>
+                <li id="authorsindex"><a href="/Authors">Authors</a></li>
+        </ul>
+
+
+        <ul id="rightMenu" class="nav navbar-nav navbar-right">
+                            <li id="logon"><a href="/Account/LogOn">LOGIN</a></li>
+                            <li id="register"><a href="/Account/Register">SIGNUP</a></li>
+         </ul>
+    </div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+</nav>
+<title>English, Campus Placements, IIT-JEE, NEET</title>
+
+<div class="jumbotron" style="text-align:center;">
+    <div class="container">
+    <h1>Play. Evaluate. Compete.</h1>
+    <p class="lead">Your own SMART study-buddy!</p>
+            <p><a class="btn btn-lg btn-success" href="/SampleTest" role="button">Try Sample Quiz</a></p>
+	<h3>Skill Mastery through Activities</h3>
+</div>
+</div>
+
+<div class="row">
+        <div class="col-md-4 col-sm-4 text-center">
+          <h2 id="questionsOdometer" class="odometer">0</h2>
+          <h3 style="margin-top:0px">Questions solved</h3>
+       </div>
+        <div class="col-md-4 col-sm-4 text-center">
+          <h2 id="testsOdometer" class="odometer">0</h2>
+          <h3 style="margin-top:0px">Quizzes attempted</h3>
+        </div>
+        <div class="col-md-4 col-sm-4 text-center">
+          <h2 id="classTestsOdometer" class="odometer">0</h2>
+          <h3 style="margin-top:0px">Class Quizzes attempted</h3>
+        </div>
+    </div>
+
+<!-- START THE FEATURETTES -->
+
+      <div class="row featurette" >
+        <div class="col-md-11 col-xs-12">
+          <h2 class="text-center">Achieve Skill Mastery</h2>
+          <p class="lead">Content-rich repository offering a diverse collection of skill development activities created by Industry experts for users that generates immediate feedback, provides step-by-step solutions, and works through point system to encourage continued practice towards Skill mastery.</p>
+        </div>
+    </div>
+
+
+      <div class="row featurette">
+        <div class="col-md-11 col-xs-12">
+          <h2 class="text-center">Track Performance, Benchmark Yourself</h2>
+          <p class="lead">Myswots analytics engine unlocks individual analytics into skill sets, performance, time-management and bench-marking. Identifies your strengths and weakness to Improve Your Performance.
+          </p>
+        </div>
+      </div>
+
+        <div class="row">
+       <div class="col-sm-4">
+          <img class="featurette-image img-responsive center-block" src="https://i.imgur.com/pmir7jR.png">
+           <h3 class="text-center">Insight</h3>
+        </div>
+        <div class="col-sm-4">
+          <img class="featurette-image img-responsive center-block" src="https://imgur.com/ZE4DiYS.png">
+            <h3 class="text-center">Meaning</h3>
+        </div>
+        <div class="col-sm-4">
+          <img class="featurette-image img-responsive center-block" src="https://i.imgur.com/ZerQTLS.png">
+          <h3 class="text-center">Action</h3>
+        </div>
+        </div>     
+      <!-- /END THE FEATURETTES -->
+
+
+
+
+    </div>  
+ 
+    <div id="profileDetails"></div>
+    
+        <footer class="footer" style="background-color:#2a2730;">
+            <div class="container">
+                <ul class="footer-links">
+                    <li><a class="small" href="/Activity" target="_blank">ACTIVITY</a></li>
+                    <li><a class="small" href="/Interns" target="_blank">OUR INTERNS</a></li>
+                    <li><a class="small" href="/Home/Testimonials" target="_blank">TESTIMONIALS</a></li>
+                    <li><a class="small" href="/About" target="_blank">ABOUT US</a></li>
+                    <li><a class="small" href="mailto:info@myswots.com" data-toggle="tooltip" data-placement="top" title="info@myswots.com">CONTACT US</a></li>
+                    <li class="small text-muted">© 2018 MySWOTs Inc.</li>
+                    <li>
+                        <div class="fb-like" data-href="https://www.facebook.com/myswots" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+                    </li>
+                </ul>
+                <p class="small text-muted">SAT® is a registered trademark of the College Board, which was not involved in the production of, and does not endorse this product.</p>
+            </div>
+        </footer>
+
+</body>
+
+</html>
+
