@@ -56,17 +56,17 @@
  /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  position: relative;
+  position: absolute;
   min-height: 100%;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-   padding-bottom:60px;
+
 
 }
 body {
   /* Margin bottom by footer height */
   margin-bottom: 150px;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   
 }
 
@@ -102,7 +102,7 @@ height: calc (100% - 60px);
 .footer-links li + li {
   margin-left: 15px;
 }
- @media only screen and (max-width: 767px){
+ /* @media only screen and (max-width: 767px){
 
   .pager {
     padding-left: 0;
@@ -119,7 +119,7 @@ html{
   height: 100%; 
   overflow: hidden;
 }
-} 
+}  */
   </style>
 </head>
 
